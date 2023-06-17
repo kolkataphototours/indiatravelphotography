@@ -1,0 +1,98 @@
+.header-about-us {
+  width: 100%;
+  /* background: url(../images/about/bts-1.webp) no-repeat; */
+  background-color: rgb(50, 50, 50);
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* filter: grayscale(100%); */
+}
+
+.header-about-us h1 {
+  font-size: 6rem;
+  color: #e5e5e5;
+}
+
+.header-about-us h3 {
+  color: #555555;
+}
+
+.our-story-about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-hr {
+  top: 0;
+  margin-bottom: 1rem;
+}
+
+.profile-card {
+  display: grid;
+  grid-template-areas: "image description";
+  place-items: center;
+  background-color: rgb(244, 242, 240);
+  grid-template-columns: 40% 60%;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+}
+
+.profile-card-2 {
+  grid-template-columns: 60% 40%;
+}
+
+.profile-description-2 {
+  grid-area: image;
+}
+
+.profile-card-image-container {
+  grid-area: image;
+}
+
+.profile-description {
+  grid-area: description;
+}
+
+.profile-name {
+  align-self: end;
+}
+
+.profile-image-container {
+  display: grid;
+  padding: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 736px) {
+  .header-about-us {
+    height: 50vh;
+    background-position: center;
+  }
+
+  .header-about-us h1 {
+    font-size: 4rem;
+  }
+
+  .profile-card {
+    grid-template-areas:
+      "image"
+      "description";
+    grid-template-columns: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .profile-card-2 {
+    grid-template-areas:
+      "description"
+      "image";
+  }
+}
